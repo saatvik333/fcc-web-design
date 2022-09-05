@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+    <title>Survey Form</title>
+    <h1 id="title">Games You Play</h1>
+    <p id="description">What all games do you play on a frequent basis?</p>
+</head>
+
+<body>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Enter your name: <input class="form-control" type="text" id="name" placeholder="Name" required></label>
+            <label id="email-label">Enter your e-mail: <input class="form-control" type="email" id="email" placeholder="Email" required></label>
+            <label id="number-label">Enter your age: <input class="form-control" type="number" id="number" min="0" max="99" placeholder="Age" required></label>
+            <label id="dropdown">What describes your current role?
+                <select class="form-control" name="role" id="role">
+                    <option disabled selected value></option>
+                    <option value="Student">Student</option>
+                    <option value="Employee">Employee</option>
+                    <option value="Unemployed">Unemployed</option>
+                    <option value="Unknown">Prefer not to say</option>
+                </select>
+            </label>    
+        </fieldset>
+        
+        <fieldset>
+            <label>What time do you play games at?</label>
+            <label><input name="time" type="radio" value="Morning"> Morning</label>
+            <label><input name="time" type="radio" value="Afternoon"> Afternoon</label>
+            <label><input name="time" type="radio" value="Night"> Night</label>
+            <label>How many hours in a day do you play games? <input class="form-control" type="number" id="time-playing" min="0" max="24" placeholder="Time spent playing" required></label>
+        </fieldset>
+        
+        <fieldset>
+            <label>What games do you play?</label>
+            <label><input name="games" type="checkbox" value="1"> Counter-Strike</label>
+            <label><input name="games" type="checkbox" value="2"> Valorant</label>
+            <label><input name="games" type="checkbox" value="3"> Doom Eternal</label>
+            <label><input name="games" type="checkbox" value="4"> Apex Legends</label>
+            <label><input name="games" type="checkbox" value="5"> Battelfield</label>
+            <label><input name="games" type="checkbox" value="6"> Rainbow Six Siege</label>
+            <label><input name="games" type="checkbox" value="7"> Call of Duty</label>
+            <label><input name="games" type="checkbox" value="8"> Overwatch</label>
+        </fieldset>
+        <fieldset>
+            <label>Any thing you would like us to know about?</label>
+            <label><textarea class="form-control" rows="4" name="stuff" placeholder="HELP ME! I am wasting so much time playing games T_T"></textarea></label>
+        </fieldset>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
